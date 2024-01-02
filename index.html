@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilkWay tour</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <section class="flex">
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <img src="images/14.png" alt=""> 
+
+    <nav class="navbar">
+        <a href="#home">Басты бет</a>
+        <a href="#book">Бронь</a>
+        <a href="#packages">Пакеттер</a>
+        <a href="#services">Қызмет</a>
+        <a href="#gallery">Галерей</a>
+        <a href="#review">Пікірлер</a>
+        <a href="#contact">Байланыс</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+    </section>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<div class="home-container">
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Шытырман оқиғаларға дайын болыңыз!</h3>
+            <p>Бізбен бірге жаңа естеліктер жасаңыз, шытырман оқиғалар сізді күтеді</p>
+        </div>
+    
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-5.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        </div>
+    
+        <div class="video-container">
+            <video src="images/vid-5.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    
+    </section>
+
+</div>
+
+
+<!-- home section ends -->
+<section class="toward" id="toward">
+    <h1 class="heading">
+        <span>Б</span>
+        <span>i</span>
+        <span>з</span>
+        <span>д</span>
+        <span>i</span>
+        <span>ң</span>
+        <span class="space"></span>
+        <span>б</span>
+        <span>а</span>
+        <span>ғ</span>
+        <span>ы</span>
+        <span>т</span>
+    </h1>
+
+    <div class="swiper box-container">
+
+        <div class="box">
+            <img src="images/mecca.avif" alt="">
+            <div class="content">
+                <h3> <i class=" fas fa-solid fa-mosque"></i> Умра және Қазылық</h3>
+                <p> Умра сапарына біз арқылы барыңыз!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/tour.jpg" alt="">
+            <div class="content">
+                <h3> <i class=" fas fa-solid fa-plane-arrival fa-bounce"></i> Әуе және Темір жол билеттер </h3>
+                <p> Барлық бағыттағы арзан билеттердітек бізден тауа аласыз!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/visa.png" alt="">
+            <div class="content">
+                <h3> <i class=" fas fa-solid fa-umbrella-beach"></i> Виза және Тур пакеттер </h3>
+                <p>Біз сізге ең керемет турлар топтамасын ұсынамыз!</p>
+
+            </div>
+        </div>
+</section>
+
+
+<!-- book section starts  
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>б</span>
+        <span>р</span>
+        <span>о</span>
+        <span>н</span>
+        <span>ь</span>
+        <span class="space"></span>
+        <span>қ</span>
+        <span>о</span>
+        <span>ю</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/book-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>қайда барасыз</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>қанша адам</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>бару</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>қайту</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="Бронь қою">
+        </form>
+
+    </div>
+
+</section>
+-->
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>п</span>
+        <span>a</span>
+        <span>к</span>
+        <span>е</span>
+        <span>т</span>
+        <span>т</span>
+        <span>e</span>
+        <span>р</span>
+    </h1>
+
+    <div class="swiper box-container">
+
+        <div class="box">
+            <img src="images/p-1.jpg" alt="">
+            <div class="content">
+                <h3 class="date"> <i class="fas fa-map-marker-alt"></i>  мумбай <span>&emsp; &emsp; • 6 күн &ensp; 7 түн</span> </h3>
+                <p> Ең керемет демалыстың бәрі сіз үшін мумбай аралдарында дем алыңыз!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                   
+                </div>
+                <div class="price"> 199'000 теңге <span>299'000 теңге</span> </div>
+                <a href="#" class="btn">Бронь қою</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-2.jpg" alt="">
+            <div class="content">
+                <h3 class="date"> <i class="fas fa-map-marker-alt"></i> хавай  <span>&emsp; &emsp; • 6 күн &ensp; 7 түн</span></h3>
+                <p> Жайлы жағажайлар, жалынды демалыс естен кетбес естелік!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 499'000 теңге <span>599'000 теңге</span> </div>
+                <a href="#" class="btn">бронь қою</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-3.jpg" alt="">
+            <div class="content">
+                <h3 class="date"> <i class="fas fa-map-marker-alt"></i> Дубай <span>&emsp; &emsp; • 6 күн &ensp; 7 түн</span> </h3>
+                <p>Архитектураның ғажабы мен байлықтың белгісі болған Дубай ға барыңыз!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 259'000 теңге <span>299'000 теңге</span> </div>
+                <a href="#" class="btn">бронь қою</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="content">
+                <h3 class="date"> <i class="fas fa-map-marker-alt"></i> Париж <span>&emsp; &emsp; • 6 күн &ensp; 7 түн</span></h3>
+                <p> Ғашықтар мекеніне айналған Париж ге саяхаттаңыз!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"> </i>
+                </div>
+                <div class="price"> 559'000 теңге <span>699'000 теңге</span> </div>
+                <a href="#" class="btn">Бронь қою</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+                <h3 class="date"> <i class="fas fa-map-marker-alt"></i> Туркия  <span>&emsp; &emsp; • 6 күн &ensp; 7 түн</span></h3>
+                <p>Керемет таңшолпанның астынада Түркі шайын ішіңіз!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 239'000 теңге  <span> 299'000 теңге</span> </div>
+                <a href="#" class="btn">бронь қою</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-6.jpg" alt="">
+            <div class="content">
+                <h3 class="date"> <i class="fas fa-map-marker-alt"></i> Египет <span>&emsp; &emsp; • 6 күн &ensp; 7 түн</span> </h3>
+                <p> Шытырман оқиғаға толы  Египетге жол тартыңыз!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 489'000 теңге <span>559'000 теңге</span> </div>
+                <a href="#" class="btn">бронь қою</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>б</span>
+        <span>i</span>
+        <span>з</span>
+        <span>д</span>
+        <span>i</span>
+        <span>ң</span>
+        <span class="space"></span>
+        <span>қ</span>
+        <span>ы</span>
+        <span>з</span>
+        <span>м</span>
+        <span>е</span>
+        <span>т</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Қолжетімді қонақүйлер</h3>
+            <p>Біз сізге ең қолайлы және қолжетімді қонақүйлер топтамасын ұсынамыз!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Дәмді тамақтар мен сусындар</h3>
+            <p>Сапалы тамақтар мен нәрлі сусындар, әлем асқанасы алдыңызда!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Білімді және қауіпсіз жетекші</h3>
+            <p>Сіз тек демалыңыз біздің жетекші сіз үшін бәріне дайын!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Әлем бойынша саяқат</h3>
+            <p> Біз сіздің әлемді тануыңызға себепші боламыз!</p>
+        </div>
+        <div class="box">
+            <i class=" fas fa-hourglass-start fa-bounce"></i>
+            <h3>24/7 жылдам қызмет</h3>
+            <p> Кез келген уақытта жауап беруге дайынбыз!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-wallet fa-bounce"></i>
+            <h3>Бөліп төлөу</h3>
+            <p>Қазір демал кейін төле, 12- айға дейін бөліп төлөу</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>П</span>
+        <span>i</span>
+        <span>к</span>
+        <span>i</span>
+        <span>р</span>
+        <span>л</span>
+        <span>е</span>
+        <span>р</span>
+    </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="images/pic1.png" alt="">
+                <h3>Авьдал Жанибек</h3>
+                <p>Қызмет көрсету сапасы өте жақсы, кез келген сұрағыма жауап ала алдым жәнеде демалыстан бұрын соңды алмаған әсер алдым.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/pic2.png" alt="">
+                <h3>Хамсбай Наурызбай</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi nemo harum pariatur nesciunt praesentium in facilis, temporibus assumenda iste?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/pic3.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi nemo harum pariatur nesciunt praesentium in facilis, temporibus assumenda iste?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/pic4.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi nemo harum pariatur nesciunt praesentium in facilis, temporibus assumenda iste?</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>г</span>
+        <span>a</span>
+        <span>л</span>
+        <span>е</span>
+        <span>р</span>
+        <span>е</span>
+        <span>й</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>Ғажап жер</h3>
+                <p>Сулұлықпен табиғаттың керемет үйлесімі.</p>
+                <a href="#" class="btn">Көбірек білу</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>Ғажайып мекен</h3>
+                <p> Алланың құдіретінің шексіз екенінің дәлелі.</p>
+                <a href="#" class="btn">Көбірек білу</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>Ғажайып мекен</h3>
+                <p> Адамзаттың керемет үйлесімі.</p>
+                <a href="#" class="btn">Көбірек білу</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>Ғажайып мекен</h3>
+                <p> Әлемнің 7 керемет бір үйлесімде.</p>
+                <a href="#" class="btn">Көбірек білу</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>Ғажайып мекен</h3>
+                <p> ава.</p>
+                <a href="#" class="btn">Көбірек білу</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>Ғажайып мекен</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Көбірек білу</a>
+            </div>
+        </div>
+    
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+
+
+<!-- review section ends -->
+<!-- brand section  -->
+<section class="brand-container">
+    <h1 class="heading">
+        <span>С</span>
+        <span>е</span>
+        <span>р</span>
+        <span>i</span>
+        <span>к</span>
+        <span>т</span>
+        <span>е</span>
+        <span>с</span>
+        <span>т</span>
+        <span>е</span>
+        <span>р</span>
+        <span>i</span>
+        <span>м</span>
+        <span>i</span>
+        <span>з</span>
+
+    </h1>
+    <div class="swiper brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/airastana.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/turkish.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/atlas.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/scat.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/turkish.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/atlas.png" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- News-->
+<section class="news" id="news">
+
+    <h1 class="heading">
+        <span>А</span>
+        <span>қ</span>
+        <span>п</span>
+        <span>а</span>
+        <span>р</span>
+        <span>а</span>
+        <span>т</span>
+    </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="images/pic1.png" alt="">
+                <h3>Авьдал Жанибек</h3>      
+                <p>Қызмет көрсету сапасы өте жақсы, кез келген сұрағыма жауап ала алдым жәнеде демалыстан бұрын соңды алмаған әсер алдым.</p>
+                <div class="stars">
+                    <h1 class="abc"> 02/01/2024 <a  href="gold.html">Көбірек білу</a></h1>
+                   
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/pic2.png" alt="">
+                <h3>Хамсбай Наурызбай</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi nemo harum pariatur nesciunt praesentium in facilis, temporibus assumenda iste?</p>
+                <div class="stars">  
+                    <h1 class="abc"> 02/01/2024 <a  href="gold.html">Көбірек білу</a></h1>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/pic3.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi nemo harum pariatur nesciunt praesentium in facilis, temporibus assumenda iste?</p>
+                <div class="stars"> 
+                    <h1 class="abc"> 02/01/2024 <a  href="gold.html">Көбірек білу</a></h1>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="images/pic4.png" alt="">
+                <h3>john deo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem animi nemo harum pariatur nesciunt praesentium in facilis, temporibus assumenda iste?</p>
+                <div class="stars">  
+                    <h1 class="abc"> 02/01/2024 <a  href="gold.html">Көбірек білу</a></h1>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--NEws end-->
+
+<!-- contact section starts  
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>Б</span>
+        <span>а</span>
+        <span>й</span>
+        <span>л</span>
+        <span>a</span>
+        <span>н</span>
+        <span>ы</span>
+        <span>с</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Есіміңіз">
+                <input type="email" placeholder="Пошта">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Телефон нөміріңіз">
+            </div>
+            <textarea placeholder="Қабарлама жазу" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Қабарлама жіберу">
+        </form>
+
+    </div>
+    
+</section>
+-->
+
+
+<!-- footer section  -->
+
+<footer class="footer">
+
+    <section class="box-container">
+
+        <div class="box">
+            <h3>Біз Туралы</h3>  
+            <p>SilkWay Tour агенттігі  сізге туризм саласындағы ең керемет қызметтерді көрсетеміз, бізбен бірге болыңыз!.</p>
+        <img src="images/1213.png" alt="" width="150" height="80">
+        </div>
+        <div class="box">
+            <h3> Біздің мекен жай</h3>
+            <a href="#">• Тәуелсіздік 54</a>
+            <a href="#">+7 702 201 34 34</a>
+           
+        </div>
+        <!--<div class="box">
+            <h3>Сілтемелер</h3>
+            <a href="#">Басты бет</a>
+            <a href="#">Бронь</a>
+            <a href="#">Пакеттер</a>
+            <a href="#">Қызмет</a>
+            <a href="#">Галерей</a>
+            <a href="#">Пікірлер</a>
+            <a href="#">Байланыс</a>
+        </div>-->
+        <div class="box">
+            <h3>Бізге Жазылыңыз</h3>
+            <a href="#">• Facebook</a>
+            <a href="#">• Instagram</a>
+            <a href="#">• Whatsapp</a>
+            <a href="#">• YouTube</a>
+        </div>
+
+    </section>
+
+    <h1 class="credit"> Жасалды <span> Mr.Jony coding </span> | Барлық құқықтар сақталған! </h1>
+
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
