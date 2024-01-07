@@ -34,7 +34,7 @@ section{
 
 .heading{
   text-align: center;
-  padding:2.5rem 0
+  padding: 2.5rem 0
 }
 
 .heading span{
@@ -469,6 +469,12 @@ text-align: center;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
 }
 
+.packages .box-container .box .content .person{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  color:#515050;
+}
 
 .services .box-container{
   display: flex;
@@ -528,6 +534,7 @@ text-align: center;
   height: 100%;
   width:100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .gallery .box-container .box .content{
