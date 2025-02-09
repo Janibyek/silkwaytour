@@ -8,7 +8,7 @@
   font-family: 'Nunito', sans-serif;
   margin:0; padding:0;
   box-sizing: border-box;
-  text-transform: lowercase;
+  text-transform: none;
   outline: none; border:none;
   text-decoration: none;
   transition: all .2s linear;
@@ -424,10 +424,10 @@ text-align: center;
 .packages .box-container .box .content .date{
   display: flex;
   justify-content: space-between;
-  margin-right: 50px;
+  margin-right: 100px;
   margin-bottom: 20px;
-  font-size:1.7rem;
-  color:#333;
+  font-size:1.9rem;
+  color:#313131;
   text-transform: uppercase;
 }
 .packages .box-container .box .content .date span{
@@ -449,7 +449,7 @@ text-align: center;
 }
 
 .packages .box-container .box .content .stars i{
-  font-size:1.7rem;
+  font-size:1.5rem;
   color:var(--orange);
 }
 
@@ -778,7 +778,6 @@ text-align: center;
 .footer .credit span{
   color:var(--orange);
 }
-
 
 
 
