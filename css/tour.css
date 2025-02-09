@@ -1,0 +1,353 @@
+/* Hero хэсэг */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* 📌 `hero` хэсгийн үндсэн тохиргоо */
+.hero {
+    width: 100vw;  /* Дэлгэцийн бүх өргөн */
+    height: 100vh; /* Дэлгэцийн бүх өндөр */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* 📌 Background зургийг тусдаа `div` дотор оруулах */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    right: 0;
+    width: 110vw;
+    height: 100vh;
+    background: url('/images/ho-2.jpg') center/cover no-repeat;
+    z-index: 1;
+}
+
+/* 📌 Dark overlay (зураг дээр харанхуй эффект) */
+.hero-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 2.5rem;
+}
+  
+
+table {
+    width: 98%;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 150px;
+    border-collapse: collapse;
+    background: #efeff0;
+    color: rgb(31, 30, 30);
+}
+
+th, td {
+    border: 2px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #fcfdfe;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: #fdfeff;
+}
+
+.title {
+    font-size: 24px;
+    margin-left: 30px;
+    text-transform:inherit;
+    margin-top: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+hr {
+    border: none;
+    height: 2px;
+    background: #444;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+
+}
+/* Үндсэн стилиуд */
+.qwerty {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #333333;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+/* Жагсаалтын стилиуд */
+ul {
+    margin-left: 40px;
+    padding-left: 2rem;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    color:  #333333;
+    ;
+}
+
+h3{
+    margin-left: 30px;
+}
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.mySlides1 {
+    display: none;
+}
+
+.mySlides1 img {
+    width: 100%;
+    border-radius: 5px;
+}
+.mySlides2 {
+    display: none;
+}
+
+.mySlides2 img {
+    width: 100%;
+    border-radius: 5px;
+}
+.mySlides3 {
+    display: none;
+}
+
+.mySlides3 img {
+    width: 100%;
+    border-radius: 5px;
+}
+.mySlides4 {
+    display: none;
+}
+
+.mySlides4 img {
+    width: 100%;
+    border-radius: 5px;
+}
+.mySlides5 {
+    display: none;
+}
+
+.mySlides5 img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 70px;
+    width: 4px;
+    background: #684bd3;
+}
+
+.itinerary {
+    position: relative;
+    margin-left: 50px;
+}
+
+.day-card {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 50px; /* Зүүн талд зай нэмэх */
+}
+
+.circle {
+    position: absolute;
+    left: -66px; /* Дугуйны зүүн талын байрлал */
+    top: 20px; /* Дугуйны дээд талын байрлал */
+    width: 37px;
+    height: 35px;
+    border:  2px solid white;
+    background-color: #684bd3; /* Дугуйны өнгө */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 25px; /* Логотипын өргөн */
+    height: 25px; /* Логотипын өндөр */
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    margin-bottom: 5px;
+}
+
+.triangle {
+    position: absolute;
+    left: -15px; /* Гурвалжингийн зүүн талын байрлал */
+    top: 35px; /* Гурвалжингийн дээд талын байрлал */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #684bd3; /* Гурвалжингийн өнгө */
+    transform: rotate(90deg); /* Гурвалжингийн үзүүрийг дугуй руу чиглүүлэх */
+}
+
+
+
+
+/* Хариуцлагатай дизайн */
+@media (max-width: 768px) {
+    p {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+    }
+
+    ul {
+        padding-left: 1.5rem;
+    }
+
+    ul li {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    ul {
+        padding-left: 1rem;
+    }
+
+    ul li {
+        font-size: 0.8rem;
+    }
+}
+  /* Өдөр бүрийн төлөвлөгөө */
+  .itinerary {
+    max-width: 1200px;
+    margin: 4rem auto;
+    margin-left: 100px;
+    padding: 0 20px;
+  }
+  
+  .day-card {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #684bd3;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s all ease;
+  }
+  
+  .day-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .day-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .day-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .day-content {
+    flex: 2;
+    padding: 1rem;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  .day-number {
+    font-size: 2.5rem;
+    color: #f8f8f8;
+    margin-bottom: 1rem;
+  }
+  
+  .day-highlight {
+    color: #c9c9c9;
+    margin: 1rem 0;
+  }
+  
+  /* Тэгш өдрүүдийн зургийн байрлал өөрчлөх */
+  .day-card:nth-child(even) .day-image {
+    order: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .day-card {
+        flex-direction: column;
+    }
+    .day-image {
+        order: 0 !important;
+        min-width: auto;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+  }
